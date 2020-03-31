@@ -1,4 +1,4 @@
-LOCAL_PATH := device/nomi/i504
+LOCAL_PATH := device/wolder/zeus
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6580
@@ -56,14 +56,14 @@ TARGET_KMODULES := true
 COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
-TARGET_PREBUILT_KERNEL := device/nomi/i504/kernel
+TARGET_PREBUILT_KERNEL := device/wolder/zeus/kernel
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board 1441186574
 BOARD_CUSTOM_BOOTIMG := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/nomi/i504/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/wolder/zeus/kernel
 
-TARGET_RECOVERY_FSTAB := device/nomi/i504/rootdir/root/fstab.mt6580
+TARGET_RECOVERY_FSTAB := device/wolder/zeus/rootdir/root/fstab.mt6580
 
-TARGET_OTA_ASSERT_DEVICE := i504,nomi_i504,"Nomi i504"
+TARGET_OTA_ASSERT_DEVICE := zeus ,"Wiam #24","WOLDER Wiam #24", Wiam #24
 # TWRP
 DEVICE_RESOLUTION := 720x1280
 TARGET_SCREEN_HEIGHT := 1280
@@ -92,10 +92,10 @@ DISABLE_DEXPREOPT := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/nomi/i504/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/wolder/zeus/bluetooth
 
 # EGL settings
-BOARD_EGL_CFG := device/nomi/i504/rootdir/system/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/wolder/zeus/rootdir/system/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 
@@ -104,7 +104,7 @@ TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
 # SELINUX
 BOARD_SEPOLICY_DIRS := \
-       device/nomi/i504/sepolicy
+       device/wolder/zeus/sepolicy
 
 BOARD_SEPOLICY_UNION := \
     app.te \
@@ -292,7 +292,7 @@ BOARD_SEPOLICY_UNION += \
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 # RIL
-# BOARD_RIL_CLASS := ../../../device/nomi/i504/ril/
+# BOARD_RIL_CLASS := ../../../device/wolder/zeus/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
@@ -309,4 +309,4 @@ WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/nomi/i504/include
+TARGET_SPECIFIC_HEADER_PATH := device/wolder/zeus/include
