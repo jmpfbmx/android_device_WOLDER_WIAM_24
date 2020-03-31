@@ -1,2 +1,3 @@
-add_lunch_combo cm_i504-userdebug
-add_lunch_combo cm_i504-eng
+add_lunch_combo cm_zeus-eng
+add_lunch_combo cm_zeus-user
+add_lunch_combo cm_zeus-userdebug
