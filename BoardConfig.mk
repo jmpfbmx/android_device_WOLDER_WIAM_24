@@ -56,17 +56,20 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5737283584
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # TWRP Flags
+RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 TW_MAX_BRIGHTNESS := 255
-TW_INCLUDE_FB2PNG := true
+#TW_INCLUDE_FB2PNG := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_REBOOT_BOOTLOADER := false
 TW_REBOOT_RECOVERY := true
 TW_HAS_DOWNLOAD_MODE := false
 TW_EXCLUDE_SUPERSU := true
-BOARD_HAS_FLIPPED_SCREEN := true
+#BOARD_HAS_FLIPPED_SCREEN := true
+RECOVERY_TOUCHSCREEN_FLIP_X := true 
+RECOVERY_TOUCHSCREEN_SWAP_XY := true
 

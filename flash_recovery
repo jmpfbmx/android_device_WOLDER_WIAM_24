@@ -1,0 +1,24 @@
+#!/system/bin/sh
+
+if [ "$#" -lt "1" ]
+  then
+    echo "ERROR: No arguments supplied"
+    echo "USAGE: flash_recovery /path/to/your/recovery/image"
+    exit 1
+fi
+
+FILE_PATH=$1
+ID=$(whoami)
+RECOVERY_BLOCK="/dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/recovery"
+
+if [ "$ID" != "root" ]
+  then
+    echo "ERROR: Must run as root"
+    exit 1
+fi
+
+dd if=$FILE_PATH of=$RECOVERY_BLOCK
+
+echo "Image write end..."
+echo ""
+exit 0

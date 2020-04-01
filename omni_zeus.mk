@@ -15,7 +15,7 @@
 #
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/cm/config/common.mk)
 
 $(call inherit-product, device/wolder/zeus/full_zeus.mk)
 
