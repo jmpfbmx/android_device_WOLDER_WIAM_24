@@ -32,4 +32,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.mt6580.rc:root/init.mt6580.rc \
     $(LOCAL_PATH)/recovery/root/init.recovery.mt6580.rc:root/init.recovery.mt6580.rc \
     $(LOCAL_PATH)/recovery/root/init.mt6580.usb.rc:root/init.recovery.mt6580.rc \
-    $(LOCAL_PATH)/recovery/root/ueventd.mt6580.rc:root/ueventd.mt6580.rc
+    $(LOCAL_PATH)/recovery/root/ueventd.mt6580.rc:root/ueventd.mt6580.rc \
+    $(LOCAL_PATH)/recovery/root/sbin/flash_recovery:root/sbin/flash_recovery
+

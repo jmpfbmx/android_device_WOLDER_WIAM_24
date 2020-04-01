@@ -842,6 +842,12 @@ service stop_modem /system/bin/md_ctrl 0
     disabled
     oneshot
 
+service flash_recovery /sbin/flash_recovery
+    class core
+    user root
+    group root
+    disabled
+
 service start_modem /system/bin/md_ctrl 1
     class main
     disabled
