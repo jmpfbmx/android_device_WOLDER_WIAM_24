@@ -1,34 +1,22 @@
-Nomi i504 Dream
-==============
+# TWRP Device Tree for the Wolder Wiam #24
+Device Specs:
 
 Basic   | Spec Sheet
 -------:|:-------------------------
 CPU     | 1.3GHz Quad-Core MT6580
 GPU     | Mali-400MP
 Memory  | 1GB RAM
-Shipped Android Version | 5.1
+Shipped Android Version | 6.0.1
 Storage | 8GB
-Battery | 2000 mAh
+Battery | 2100 mAh
 Display | 5" 1280 x 720 px
-Camera  | 8MPx, LED Flash
+Camera  | 5MPx, LED Flash
 
-![Nomi](http://nomi-electronics.com/wp-content/uploads/2015/08/MARK0632.jpg "Nomi i504 Dream Black")
+Device Picture:
+![Wolder Wiam #24](https://img.pccomponentes.com/articles/12/126034/b1.jpg "Wolder Wiam #24")
 
-This branch is for building CyanogenMod 12.1 (or Android Lollipop 5.1 AOSP based roms) ROMS.
+This branch is for building TeamWinRecovery (TWRP).
 
-Working:
-- Audio
-- Sensors
-- Wi-Fi
-- Camera for taking pictures (not video)
-- Modem
-- USSD
-- Bluetooth
-- Mobile internet
-- Wi-Fi tethering
-- GPS
-- HW composer
-- Sleep
-
-Not working/Bugs:
-- Video recording
+## Thanks
+- huckleberrypie
+- R0rt1z2

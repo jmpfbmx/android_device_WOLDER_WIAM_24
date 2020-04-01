@@ -1,2 +1,2 @@
-add_lunch_combo cm_i504-userdebug
-add_lunch_combo cm_i504-eng
+add_lunch_combo omni_zeus-eng
+add_lunch_combo omni_zeus-userdebug
